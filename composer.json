@@ -8,5 +8,11 @@
     "require": {
         "tsCMS/SystemBundle": "*",
         "friendsofsymfony/user-bundle": "~2.0@dev"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com::plazmdk/tsCMSSystemBundle.git"
+        }
+    ]
 }
