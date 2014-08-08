@@ -1,0 +1,42 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>tsCMS</title>
+    {% stylesheets
+    'bundles/tscmssystem/css/font-awesome.min.css'
+    'bundles/tscmsuser/css/style.css'
+    filter='cssrewrite'
+    %}
+    <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
+    {% endstylesheets %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+{% if error %}
+    <div>{{ error|trans }}</div>
+{% endif %}
+
+<form action="{{ path("fos_user_security_check") }}" method="post">
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+    <div class="lockFrame"><div class="lock"></div></div>
+    <div class="inputFields">
+        <div class="inputData">
+            <div class="input">
+                <input type="text" id="username" name="_username" value="{{ last_username }}" placeholder="{{ 'security.login.username'|trans }}" required="required" />
+            </div>
+            <div class="input">
+                <input type="password" id="password" name="_password" placeholder="{{ 'security.login.password'|trans }}" required="required" />
+            </div>
+        </div>
+        <button class="inputButton" type="submit" id="_submit" name="_submit">
+            <i class="fa fa-arrow-right"></i>
+        </button>
+    </div>
+
+</form>
+
+</body>
+</html>
+
