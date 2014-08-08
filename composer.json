@@ -1,0 +1,12 @@
+{
+    "name": "tsCMS/UserBundle",
+    "autoload": {
+        "psr-0" : {
+            "tsCMS\\UserBundle" : "src"
+        }
+    },
+    "require": {
+        "tsCMS/SystemBundle": "*",
+        "friendsofsymfony/user-bundle": "~2.0@dev"
+    }
+}
