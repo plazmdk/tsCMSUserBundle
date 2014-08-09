@@ -6,7 +6,7 @@
         }
     },
     "require": {
-        "tscms/system": "*",
+        "tscms/system": "dev-master",
         "friendsofsymfony/user-bundle": "~2.0@dev"
     },
     "repositories": [
