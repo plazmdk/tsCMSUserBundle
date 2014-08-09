@@ -1,18 +1,18 @@
 {
-    "name": "tsCMS/UserBundle",
+    "name": "tscms/user",
     "autoload": {
         "psr-0" : {
             "tsCMS\\UserBundle" : "src"
         }
     },
     "require": {
-        "tsCMS/SystemBundle": "*",
+        "tscms/system": "*",
         "friendsofsymfony/user-bundle": "~2.0@dev"
     },
     "repositories": [
         {
             "type": "vcs",
-            "url":  "git@github.com:plazmdk/tsCMSSystemBundle.git"
+            "url":  "https://github.com/plazmdk/tsCMSSystemBundle"
         }
     ]
 }
