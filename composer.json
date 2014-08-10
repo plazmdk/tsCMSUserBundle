@@ -5,6 +5,7 @@
             "tsCMS\\UserBundle" : ""
         }
     },
+    "target-dir": "tsCMS/UserBundle",
     "require": {
         "tscms/system": "dev-master",
         "friendsofsymfony/user-bundle": "~2.0@dev"
