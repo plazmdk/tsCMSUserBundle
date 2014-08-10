@@ -2,7 +2,7 @@
     "name": "tscms/user",
     "autoload": {
         "psr-0" : {
-            "tsCMS\\UserBundle" : "src"
+            "tsCMS\\UserBundle" : ""
         }
     },
     "require": {
